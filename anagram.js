@@ -6,8 +6,8 @@ function isAnagram(str1, str2) {
 }
 
 function formatStr(str) {
-  // replace words using regex, turn to lowercase, split into an array, sort the array, join back into string
-  // Line 14 for example: "cdeir" from 'cider' === "cdeir" from 'cried' so it is an Anagram
+  // replace chars using regex, turn to lowercase, split into an array, sort the array, join back into string
+  // Line 14 for example: 'cider' => "cdeir" === 'cried' => "cdeir" so TRUE,  it is an Anagram
   return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
 }
 
