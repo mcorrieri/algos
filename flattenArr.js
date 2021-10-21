@@ -4,7 +4,7 @@ function flattenArr(arrays) {
   // solution 1
   //   return [].concat.apply([], arrays);
   // solution 2
-  return [].concat(...arrays);
+  return [].concat(...arrays); // concat is used to merge two or more arrays
 }
 
 console.log(flattenArr([[1, 2], [3, 4], [5]])); // [1, 2, 3, 4, 5]
