@@ -1,3 +1,6 @@
+// Can sum?? (Tabulation)
+// Write a function that takes in a target sum and numbers(arr), Return True of False based on if we can add the numbers in the array and if they equal our target sum
+
 const canSum = (targetSum, numbers) => {
   const table = Array(targetSum + 1).fill(false);
   table[0] = true;
